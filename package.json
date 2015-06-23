@@ -6,8 +6,19 @@
   "bugs": {
     "url": "https://github.com/alrra/travis-after-all/issues"
   },
-  "description": "...",
+  "description": "Simple script that can help you execute code only once in a Travis CI build matrix",
+  "devDependencies": {
+    "babel": "^5.6.4",
+    "babel-core": "^5.6.4",
+    "babel-runtime": "^5.6.4",
+    "mocha": "^2.2.5"
+  },
   "homepage": "https://github.com/alrra/travis-after-all#readme",
+  "keywords": [
+    "travis",
+    "travis-ci"
+  ],
+  "license": "MIT",
   "name": "travis-after-all",
   "repository": {
     "type": "git",
@@ -16,12 +27,5 @@
   "scripts": {
     "test": "./test/test.sh"
   },
-  "version": "0.1.0",
-  "devDependencies": {
-    "babel": "^5.6.4",
-    "babel-core": "^5.6.4",
-    "babel-runtime": "^5.6.4",
-    "mocha": "^2.2.5"
-  },
-  "private": true
+  "version": "0.1.0"
 }
