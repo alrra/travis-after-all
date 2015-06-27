@@ -3,9 +3,7 @@
   "bin": {
     "travis-after-all": "bin/travis-after-all.js"
   },
-  "bugs": {
-    "url": "https://github.com/alrra/travis-after-all/issues"
-  },
+  "bugs": "https://github.com/alrra/travis-after-all/issues",
   "description": "Simple script that can help you execute code only once in a Travis CI build matrix",
   "devDependencies": {
     "babel": "^5.6.4",
@@ -20,10 +18,7 @@
   ],
   "license": "MIT",
   "name": "travis-after-all",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:alrra/travis-after-all.git"
-  },
+  "repository": "alrra/travis-after-all",
   "scripts": {
     "test": "./test/test.sh"
   },
