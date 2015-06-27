@@ -1,4 +1,4 @@
-### HEAD
+### 0.1.2 (June 27, 2015)
 
 * Make minor improvements.
 
