@@ -72,10 +72,7 @@ after_script:
 
       # -- [1] -------------------------------------------------------
 
-      # Make the `travis-after-all` command available
-      npm link
-
-      travis-after-all
+      $(npm bin)/travis-after-all
       exitCode=$?
 
 

@@ -1,3 +1,7 @@
+### HEAD
+
+* Fix `npm` related usage example from `README.md`.
+
 ### 0.1.2 (June 27, 2015)
 
 * Make minor improvements.
