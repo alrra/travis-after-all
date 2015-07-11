@@ -11,7 +11,7 @@ after_script:
 
         # Make the `travis-after-all` command available
         npm link > /dev/null
-        [ $? -nq 0 ] && exit 1
+        [ $? -ne 0 ] && exit 1
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
