@@ -10,7 +10,8 @@ after_script:
       if [ "$TEST_JOB" != "true" ]; then
 
         # Make the `travis-after-all` command available
-        npm link
+        npm link > /dev/null
+        [ $? -nq 0 ] && exit 1
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
