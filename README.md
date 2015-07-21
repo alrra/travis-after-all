@@ -1,6 +1,6 @@
 # travis-after-all
 
-[![Build Status](https://travis-ci.org/alrra/travis-after-all.svg)](https://travis-ci.org/alrra/travis-after-all)
+[![Build Status](https://travis-ci.org/alrra/travis-after-all.svg?branch=master)](https://travis-ci.org/alrra/travis-after-all)
 [![devDependency Status](https://david-dm.org/alrra/travis-after-all/dev-status.svg)](https://david-dm.org/alrra/travis-after-all#info=devDependencies)
 
 `travis-after-all` is a simple script that can help you execute
