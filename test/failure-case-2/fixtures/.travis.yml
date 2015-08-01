@@ -1,0 +1,73 @@
+# For more information about the configurations used
+# in this file, please see the Travis CI documentation:
+# http://docs.travis-ci.com
+
+after_script:
+  - |
+
+      declare exitCode
+
+      if [ "$TEST_JOB" != "true" ]; then
+
+        # Make the `travis-after-all` command available
+        npm link > /dev/null
+        [ $? -ne 0 ] && exit 1
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        travis-after-all
+        exitCode=$?
+
+        if [ $exitCode -eq 0 ]; then
+          printf "Doing task 1...\n"
+        elif [ $exitCode -eq 1 ]; then
+          printf "Doing task 2...\n"
+        fi
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        # Run the script multiple times in order to simulate the test
+        # case where multiple scripts that include it are used at the
+        # same time
+
+        travis-after-all
+        exitCode=$?
+
+        [ $exitCode -eq 0 ] && printf "Doing task 3...\n"
+
+        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        travis-after-all
+        exitCode=$?
+
+        [ $exitCode -eq 0 ] && printf "Doing task 4...\n"
+
+
+      fi
+
+language: node_js
+
+matrix:
+
+  # Environment variables:
+  #
+  #  * JOB_SHOULD_FAIL="true"  ->  Makes the job fail
+  #                                (this is required for testing purposes)
+  #
+  #  * TIME_DELAY=<number>     ->  Introduces an artificial time delay
+  #                                of `<number>` seconds
+  #                                (this is required for testing purposes)
+
+  include:
+
+    - node_js: "0.10"
+      env: TIME_DELAY=5
+
+    - node_js: "0.10"
+      env: TIME_DELAY=15
+
+    - node_js: "0.10"
+      env:
+        - JOB_SHOULD_FAIL="true" TIME_DELAY=10
+
+    - node_js: "io.js"

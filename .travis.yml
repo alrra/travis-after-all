@@ -2,80 +2,13 @@
 # in this file, please see the Travis CI documentation:
 # http://docs.travis-ci.com
 
-after_script:
-  - |
-
-      declare exitCode
-
-      if [ "$TEST_JOB" != "true" ]; then
-
-        # Make the `travis-after-all` command available
-        npm link > /dev/null
-        [ $? -ne 0 ] && exit 1
-
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-        travis-after-all
-        exitCode=$?
-
-        if [ $exitCode -eq 0 ]; then
-          printf "Doing task 1...\n"
-        elif [ $exitCode -eq 1 ]; then
-          printf "Doing task 4...\n"
-        fi
-
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-        # Run the script multiple times in order to simulate the test
-        # case where multiple scripts that include it are used at the
-        # same time
-
-        travis-after-all
-        exitCode=$?
-
-        [ $exitCode -eq 0 ] && printf "Doing task 2...\n"
-
-        # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-        curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/master/lib/travis-after-all.js | node
-        exitCode=$?
-
-        [ $exitCode -eq 0 ] && printf "Doing task 3...\n"
-
-      fi
+env:
+  global:
+    - secure: "HQesyukH609YyGTwO4VYRCOQzNJlRl1UGcwjnCjZUlPWWZdnua9AweXnugOiPCEbcYfWpqOe8SK4lcjbFRcGFUZ5IBTlErZ6l3t7WXQswJypbBGGQWD5Pvp10jULMfI9/hG3YAr/54NhysBOhCWRvs8Uj3/EQ2Gmk0R74+I8nPSpyfrPzZIfbwMFugAJo2PQJtcqsif87VJY+cbbMRa7Tzml01VrfvikRCZSO6WZmjpFy60iyqxhhqa1FWc57kxe/fQJGiR4kUDyGx5oUNY5R74/cF2ZABq+Ibhr1EVYaYDyn+UKtB/mbw8hbXIoRMDrA279jyNQDIgFVUd4Epsx3v03TkXycwIDjGDoHqO0hfGXi0s9EP1npLW6kT+JxQmVBc9nQxjgQSVHS+PWuuR397oOV4F4zyoL3kYdjCdhArLipVErOEol+DLn0ZLRWerhFNaLkNsELCbvVa2KWq1MjDlDNzj8tBS4N/3x+KH35mFPLqfRtEvk60N47qo1qHlS9nSa+PurbH2HZ13pLFcCOV5NEg+SkX3NrynHZEAf3wVH3wjLG1fMkMoLzDyRiKA8cEGI1dkrz7sxO5ZzQsufRHoBNxB67dRpEEhizvXq4/WrF1aAdjMpD1pZ5WNVMeC3dd0reidLHUUqkG/DvkY6R1cEXr56CGwdAhXFds/U8hQ="
 
 language: node_js
 
-matrix:
+node_js:
+  - "0.12"
 
-  # Environment variables:
-  #
-  #  * FAILING_JOB="true"   ->  Makes the test fail
-  #                             (this is required for testing purposes)
-  #
-  #  * TIME_DELAY=number    ->  Introduces an artificial time delay of
-  #                             `number` seconds
-  #                             (this is required for testing purposes)
-  #
-  #  * TEST_JOB="true"      ->  Indicates that this is the job that
-  #                             needs will execute the tests
-
-  include:
-
-    - node_js: "0.10"
-      env: FAILING_JOB="true"
-
-    - node_js: "0.10"
-      env: TIME_DELAY=10
-
-    - node_js: "0.12"
-      env: TIME_DELAY=5
-
-    - node_js: "io.js"
-      env: TIME_DELAY=15
-
-    - node_js: "0.10"
-      env: TEST_JOB="true"
-
-  allow_failures:
-    - env: FAILING_JOB="true"
+sudo: false
