@@ -59,11 +59,13 @@ export default async () => {
 
     describe('Tests', () => {
 
-        testEdgeCase(builds);
-        testFailureCase1(builds);
-        testFailureCase2(builds);
         testSuccessCase1(builds);
         testSuccessCase2(builds);
+
+        testFailureCase1(builds);
+        testFailureCase2(builds);
+
+        testEdgeCase(builds);
 
         after(() => deleteTestBranches(TEST_DIRS));
 

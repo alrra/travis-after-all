@@ -71,3 +71,6 @@ matrix:
         - JOB_SHOULD_FAIL="true" TIME_DELAY=10
 
     - node_js: "io.js"
+
+notifications:
+  email: false

@@ -72,3 +72,6 @@ matrix:
   allow_failures:
 
     - env: JOB_SHOULD_FAIL="true"
+
+notifications:
+  email: false

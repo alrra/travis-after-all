@@ -70,3 +70,6 @@ matrix:
       env: TIME_DELAY=15
 
     - node_js: "io.js"
+
+notifications:
+  email: false
