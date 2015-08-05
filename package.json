@@ -7,6 +7,13 @@
     "test-branch-prefix": "test_build"
   },
   "author": "Cătălin Mariș <alrraa@gmail.com> (http://catalinmaris.com/)",
+  "babel": {
+    "modules": "common",
+    "optional": [
+      "es7.asyncFunctions",
+      "runtime"
+    ]
+  },
   "bin": {
     "travis-after-all": "bin/travis-after-all.js"
   },
