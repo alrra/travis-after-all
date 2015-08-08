@@ -1,4 +1,4 @@
-### HEAD
+### 1.0.0 (August 9, 2015)
 
 * Make module requireable
   ([#2](https://github.com/alrra/travis-after-all/issues/2)).
