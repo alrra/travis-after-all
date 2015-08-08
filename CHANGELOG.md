@@ -1,3 +1,7 @@
+### HEAD
+
+* Add missing `main` field in `package.json`.
+
 ### 1.0.0 (August 9, 2015)
 
 * Make module requireable
