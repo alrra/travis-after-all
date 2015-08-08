@@ -130,7 +130,7 @@ after_script:
 
       # -- [1] -------------------------------------------------------
 
-      curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/1.0.0/lib/travis-after-all.js | node
+      curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/1.1.0/lib/travis-after-all.js | node
       exitCode=$?
 
 

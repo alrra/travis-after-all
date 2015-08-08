@@ -1,4 +1,4 @@
-### HEAD
+### 1.1.0 (August 9, 2015)
 
 * Add missing `main` field in `package.json`
   [[abe4efe](https://github.com/alrra/travis-after-all/commit/abe4efe3d802f3eeffd9a4a910ef0bd7067230af)].
