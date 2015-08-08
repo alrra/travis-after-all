@@ -3,7 +3,7 @@
 # http://docs.travis-ci.com
 
 after_script:
-  - ./test/require-case/fixtures/main.js
+  - ./test/require/fixtures/main.js
 
 language: node_js
 

@@ -8,12 +8,12 @@ import glob from './utils/glob';
 import repository from './utils/repository';
 import travis from './utils/travis';
 
-import testEdgeCase from './edge-case/tests';
-import testFailureCase1 from './failure-case-1/tests';
-import testFailureCase2 from './failure-case-2/tests';
-import testRequireCase from './require-case/tests';
-import testSuccessCase1 from './success-case-1/tests';
-import testSuccessCase2 from './success-case-2/tests';
+import testEdgeCase from './edge/tests';
+import testFailureCase1 from './failure-1/tests';
+import testFailureCase2 from './failure-2/tests';
+import testRequireCase from './require/tests';
+import testSuccessCase1 from './success-1/tests';
+import testSuccessCase2 from './success-2/tests';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -10,4 +10,4 @@ const PREFIX = `${pkg['_configs']['test-branch-prefix']}_${travis.getCurrentBuil
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 export default (baseName) =>
-    `${PREFIX}_-_${baseName}`;
+    `${PREFIX}_${baseName}`;
