@@ -1,3 +1,8 @@
+### HEAD
+
+* Make module requireable
+  ([#2](https://github.com/alrra/travis-after-all/issues/2)).
+
 ### 0.1.3 (July 11, 2015)
 
 * Fix `npm` related usage example from `README.md`

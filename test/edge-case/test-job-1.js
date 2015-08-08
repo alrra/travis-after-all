@@ -33,8 +33,7 @@ export default (jobList) => {
         });
 
         it('Job should NOT have message that Job 1 was assign to do the tasks', () => {
-            assert.equal(false, jobData.log.indexOf(`Job ${jobList[0].number} was assigned to do the \`after_all_failure\` task`) !== -1);
-
+            assert.equal(false, jobData.log.indexOf(`Job ${jobList[0].number} was assigned to do the "after failure" task`) !== -1);
         });
 
         [1, 3, 4].forEach((i) => {

@@ -92,6 +92,27 @@ after_script:
 
 ```
 
+You can also run `travis-afer-all` from within your `node` script, e.g.:
+
+```js
+var travisAfterAll = require('travis-after-all');
+
+function callback(exitCode, error) {
+
+    if ( error ) {
+       // ...
+    } else {
+        if ( exitCode === 0 ) {
+          // Here goes the code that needs to be executed if the build succeeded
+        } else if ( exitCode === 1) {
+          // Here goes the code that needs to be executed if the build failed
+        }
+    }
+
+}
+
+travisAfterAll(callback);
+```
 
 ### General usage
 

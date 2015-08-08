@@ -11,6 +11,7 @@ import travis from './utils/travis';
 import testEdgeCase from './edge-case/tests';
 import testFailureCase1 from './failure-case-1/tests';
 import testFailureCase2 from './failure-case-2/tests';
+import testRequireCase from './require-case/tests';
 import testSuccessCase1 from './success-case-1/tests';
 import testSuccessCase2 from './success-case-2/tests';
 
@@ -61,6 +62,8 @@ export default async () => {
 
         testSuccessCase1(builds);
         testSuccessCase2(builds);
+
+        testRequireCase(builds);
 
         testFailureCase1(builds);
         testFailureCase2(builds);

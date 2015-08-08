@@ -15,7 +15,7 @@
     ]
   },
   "bin": {
-    "travis-after-all": "bin/travis-after-all.js"
+    "travis-after-all": "bin/travis-after-all"
   },
   "bugs": "https://github.com/alrra/travis-after-all/issues",
   "description": "Simple script that can help you execute code only once in a Travis CI build matrix",
