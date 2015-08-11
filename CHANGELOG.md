@@ -1,4 +1,4 @@
-### HEAD
+### 1.2.0 (August 12, 2015)
 
 * Make `curl -sSL https://.../travis-after-all.js | node` actually work
   [[f22fd1e](https://github.com/alrra/travis-after-all/commit/f22fd1e83a72bc53b41212921883e09ef6227c95)].

@@ -38,5 +38,5 @@
   "scripts": {
     "test": "mocha --compilers js:babel/register --delay --reporter spec --slow 15m --timeout 30m test/main.js"
   },
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
