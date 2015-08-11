@@ -1,3 +1,7 @@
+### HEAD
+
+* Make `curl -sSL https://.../travis-after-all.js | node` actually work.
+
 ### 1.1.0 (August 9, 2015)
 
 * Add missing `main` field in `package.json`
