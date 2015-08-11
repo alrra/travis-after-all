@@ -37,7 +37,7 @@ after_script:
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-        travis-after-all
+        curl -sSL "https://raw.githubusercontent.com/alrra/travis-after-all/$TRAVIS_BRANCH/lib/travis-after-all.js" | node
         exitCode=$?
 
         [ $exitCode -eq 0 ] && printf "Doing task 4...\n"
