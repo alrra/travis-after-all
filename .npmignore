@@ -1,6 +1,6 @@
-.babelrc
 .editorconfig
 .gitattributes
 .gitignore
 .travis.yml
+scripts
 test
