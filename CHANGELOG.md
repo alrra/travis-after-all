@@ -1,4 +1,4 @@
-### HEAD
+### 1.3.0 (August 12, 2015)
 
 * Make `$(npm bin)/travis-after-all` actually work
   [[072a211](https://github.com/alrra/travis-after-all/commit/072a2110aea79a05d05fe2e7ef23edbc5536621a)].
