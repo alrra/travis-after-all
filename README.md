@@ -1,6 +1,5 @@
 # travis-after-all
 
-
 [![Build Status](https://travis-ci.org/alrra/travis-after-all.svg?branch=master)](https://travis-ci.org/alrra/travis-after-all)
 [![devDependency Status](https://david-dm.org/alrra/travis-after-all/dev-status.svg)](https://david-dm.org/alrra/travis-after-all#info=devDependencies)
 
@@ -33,7 +32,7 @@ Exit codes meaning:
 * `1` - the job that gets this exit code is the one assigned to run the
   code if the build failed
 
-* other - job was not assigned to do anything
+* `2` - the job that gets this exit code was not assigned to do anything
 
 --
 
