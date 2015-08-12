@@ -30,10 +30,16 @@ after_script:
         # case where multiple scripts that include it are used at the
         # same time
 
-        travis-after-all
-        exitCode=$?
+        if npm link &> /dev/null; then
 
-        [ $exitCode -eq 0 ] && printf "Doing task 3...\n"
+          travis-after-all
+          exitCode=$?
+
+          [ $exitCode -eq 0 ] && printf "Doing task 3...\n"
+
+          npm unlink &> /dev/null
+
+        fi
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

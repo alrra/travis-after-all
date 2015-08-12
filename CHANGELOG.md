@@ -1,3 +1,7 @@
+### HEAD
+
+* Make `$(npm bin)/travis-after-all` actually work.
+
 ### 1.2.0 (August 12, 2015)
 
 * Make `curl -sSL https://.../travis-after-all.js | node` actually work
