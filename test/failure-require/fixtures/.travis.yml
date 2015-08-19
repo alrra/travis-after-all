@@ -1,0 +1,45 @@
+# For more information about the configurations used
+# in this file, please see the Travis CI documentation:
+# http://docs.travis-ci.com
+
+after_script:
+  - ./test/failure-require/fixtures/main.js
+
+language: node_js
+
+matrix:
+
+  # Environment variables:
+  #
+  #  * JOB_SHOULD_FAIL=true   ->  Makes the job fail
+  #                               (this is required for testing purposes)
+  #
+  #  * TIME_DELAY=<number>    ->  Introduces an artificial time delay
+  #                               of `<number>` seconds
+  #                               (this is required for testing purposes)
+
+  include:
+
+    - node_js: "0.12"
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=10
+
+    - node_js: "0.12"
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=5
+
+    - node_js: "0.10"
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=15
+
+    - node_js: "io.js"
+
+
+  allow_failures:
+
+    - env: JOB_SHOULD_FAIL=true TIME_DELAY=10
+
+    - env: JOB_SHOULD_FAIL=true TIME_DELAY=5
+
+
+notifications:
+  email: false
+
+sudo: false

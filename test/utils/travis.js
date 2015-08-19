@@ -21,6 +21,7 @@ const TRAVIS_CURRENT_JOB_ID = parseInt(process.env.TRAVIS_JOB_ID, 10);
 
 const TRAVIS_BRANCH_NAME = `${process.env.TRAVIS_BRANCH}`;
 const TRAVIS_PULL_REQUEST = `${process.env.TRAVIS_PULL_REQUEST}`;
+const TRAVIS_REPO_SLUG = `${process.env.TRAVIS_REPO_SLUG}`;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -38,6 +39,7 @@ const getBuildID = async (repositoryName, branchName) => {
 
     let buildID = null;
     let url = BUILDS_URL;
+    let attempts = 5;
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -79,16 +81,28 @@ const getBuildID = async (repositoryName, branchName) => {
                 url = `${BUILDS_URL}?after_number=${lastBuildNumber}`;
             }
 
+
+            attempts--;
+
         }
 
-    } while ( buildID === null );
+    } while ( buildID === null && attempts !== 0 );
 
     return buildID;
 
 };
 
-const getBuildData = (buildID) =>
-    getJSON(`${TRAVIS_API_BUILD_URL}${buildID}`);
+const getBuildData = async (repositoryName, branchName) => {
+
+    const BUILD_ID = await getBuildID(repositoryName, branchName);
+
+    if ( BUILD_ID !== undefined ) {
+        return await getFinalBuildData(BUILD_ID);
+    } else {
+        return;
+    }
+
+};
 
 const getCurrentBuildID = () =>
     TRAVIS_CURRENT_BUILD_ID;
@@ -130,6 +144,9 @@ const getFinalJobData = async (jobID) =>
         `Waiting for job '${jobID}' to finish...`
     );
 
+const getRepositorySlug = () =>
+    TRAVIS_REPO_SLUG;
+
 const isPullRequest = () =>
     TRAVIS_PULL_REQUEST !== 'false';
 
@@ -144,5 +161,6 @@ export default {
     getCurrentJobID: getCurrentJobID,
     getFinalBuildData: getFinalBuildData,
     getFinalJobData: getFinalJobData,
+    getRepositorySlug: getRepositorySlug,
     isPullRequest: isPullRequest
 };

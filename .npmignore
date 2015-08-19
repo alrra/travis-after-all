@@ -2,5 +2,5 @@
 .gitattributes
 .gitignore
 .travis.yml
-scripts
+dist_test
 test
