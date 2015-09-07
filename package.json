@@ -37,7 +37,8 @@
   "name": "travis-after-all",
   "repository": "alrra/travis-after-all",
   "scripts": {
-    "test": "rm -rf dist_test && babel test --out-dir dist_test && node dist_test/main.js | tap-mocha-reporter spec"
+    "pretest": "rm -rf dist_test && babel test --out-dir dist_test",
+    "test": "node dist_test/main.js | tap-mocha-reporter spec"
   },
   "version": "1.3.0"
 }
