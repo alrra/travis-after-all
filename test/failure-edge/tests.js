@@ -19,7 +19,7 @@ const tests = (testFunction, jobData) => {
         unsignedTasks: [1, 3, 4]
     });
 
-    [2, 3, 4].forEach((i) => {
+    [2, 3, 4, 5, 6].forEach((i) => {
         testJob(testFunction, i, jobData, {
             assignJobNumber: 1,
             successful: false,

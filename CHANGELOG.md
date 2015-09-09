@@ -1,3 +1,8 @@
+### HEAD
+
+* Make `travis-after-all` take partial decisions
+  ([#3](https://github.com/alrra/travis-after-all/issues/3)).
+
 ### 1.3.0 (August 12, 2015)
 
 * Make `$(npm bin)/travis-after-all` actually work

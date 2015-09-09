@@ -51,7 +51,7 @@ const main = async () => {
     //  2) there is no fully secure way to automatically import
     //     code from a pull request into a local branch
     //
-    //     (...and yes, I have trust issues!)
+    //     (... and yes, I have trust issues!)
 
     if ( travis.isPullRequest() === true ) {
         process.exit(0);
@@ -62,14 +62,14 @@ const main = async () => {
     if ( isTestBranch() ) {
 
         //  If, for testing purposes, a time delay is specified,
-        //  delay the job with the specified time
+        //  delay the job with the specified time.
 
         await delayJob();
 
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-        //  Check if, for testing purposes, the current job
-        //  should be made to fail, and if so, make it fail
+        //  Check if, for testing purposes, the current job should
+        //  be made to fail, and if so, make it fail.
 
         if ( jobShouldFail() ) {
             tap.fail('Job failed');
@@ -81,18 +81,18 @@ const main = async () => {
 
             // Failed builds
 
-            testFailureAll(t)           // ( 1  1  1  1  )
-            testFailureSome(t)          // ( 1  0* 0  0  )
-            testFailureCURL(t)          // ( 0* 1  0  1  )
-            testFailureRequire(t);      // ( 0* 0* 1  0  )
-            testFailureEdge(t);         // ( 0* 0* 0* 0* )
+            testFailureAll(t)           // ( 1  1  1  1  1  1  )
+            testFailureSome(t)          // ( 0  0* 0  1  0  0  )
+            testFailureCURL(t)          // ( 0* 1  0  1  0  0  )
+            testFailureRequire(t);      // ( 0* 0* 1  0  0  1  )
+            testFailureEdge(t);         // ( 0* 0* 0* 0* 0* 0* )
 
             // Successful builds
 
-            testSuccessAll(t);          // ( 0  0  0  0  )
-            testSuccessSome(t);         // ( 0* 0  0* 0  )
-            testSuccessCURL(t);         // ( 0* 0* 0  0  )
-            testSuccessRequire(t);      // ( 0* 0* 0* 0  )
+            testSuccessAll(t);          // ( 0  0  0  0  0  0  )
+            testSuccessSome(t);         // ( 0* 0  0* 0  0* 0  )
+            testSuccessCURL(t);         // ( 0* 0* 0* 0  0  0  )
+            testSuccessRequire(t);      // ( 0* 0* 0* 0* 0* 0  )
 
             t.end();
 

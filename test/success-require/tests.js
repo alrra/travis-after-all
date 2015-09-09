@@ -11,17 +11,17 @@ const CURRENT_TEST_DIR = path.basename(__dirname);
 
 const tests = (testFunction, jobData) => {
 
-    [1, 2, 3].forEach((i) => {
+    [1, 2, 3, 4, 5].forEach((i) => {
         testJob(testFunction, i, jobData, {
-            assignJobNumber: 4,
+            assignJobNumber: 6,
             successful: false,
             successfulBuild: true,
             unsignedTasks: [1, 2, 3, 4]
         });
     });
 
-    testJob(testFunction, 4, jobData, {
-        assignJobNumber: 4,
+    testJob(testFunction, 6, jobData, {
+        assignJobNumber: 6,
         assignedTasks: [1, 3, 4],
         successful: true,
         successfulBuild: true,

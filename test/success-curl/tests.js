@@ -11,28 +11,30 @@ const CURRENT_TEST_DIR = path.basename(__dirname);
 
 const tests = (testFunction, jobData) => {
 
-    [1, 2].forEach((i) => {
+    [1, 2, 3].forEach((i) => {
         testJob(testFunction, i, jobData, {
-            assignJobNumber: 3,
+            assignJobNumber: 4,
             successful: false,
             successfulBuild: true,
             unsignedTasks: [1, 2, 3, 4]
         });
     });
 
-    testJob(testFunction, 3, jobData, {
-        assignJobNumber: 3,
+    testJob(testFunction, 4, jobData, {
+        assignJobNumber: 4,
         assignedTasks: [1, 3, 4],
         successful: true,
         successfulBuild: true,
         unsignedTasks: [2]
     });
 
-    testJob(testFunction, 4, jobData, {
-        assignJobNumber: 3,
-        successful: true,
-        successfulBuild: true,
-        unsignedTasks: [1, 2, 3, 4]
+    [5, 6].forEach((i) => {
+        testJob(testFunction, i, jobData, {
+            assignJobNumber: 4,
+            successful: true,
+            successfulBuild: true,
+            unsignedTasks: [1, 2, 3, 4]
+        });
     });
 
 };

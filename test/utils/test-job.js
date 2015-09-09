@@ -41,9 +41,9 @@ export default (tap, jobNumber, jobList, configs) => {
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         if ( configs.assignJobNumber !== jobNumber ) {
-            t.ok(JOB_DATA.log.indexOf(`Job ${jobList[configs.assignJobNumber - 1].number} was assigned to do the "${AFTER_MSG}" task`) !== -1 ,`Job should have message that Job ${configs.assignJobNumber} was assign to do the tasks`);
+            t.ok(JOB_DATA.log.indexOf('Some other job was assigned to do the task') !== -1 ,`Job should have message that 'Some other job was assigned to do the task'`);
         } else {
-            t.notOk(JOB_DATA.log.indexOf(`Job ${jobList[configs.assignJobNumber - 1].number} was assigned to do the "${AFTER_MSG}" task`) !== -1 ,`Job should have message that Job ${configs.assignJobNumber} was assign to do the tasks`);
+            t.notOk(JOB_DATA.log.indexOf('Some other job was assigned to do the task') !== -1 ,`Job should have message that 'Some other job was assigned to do the task'`);
         }
 
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
