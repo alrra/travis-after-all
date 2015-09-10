@@ -1,4 +1,4 @@
-### HEAD
+### 1.4.0 (September 10, 2015)
 
 * Make `travis-after-all` take partial decisions
   [[#3](https://github.com/alrra/travis-after-all/issues/3),
