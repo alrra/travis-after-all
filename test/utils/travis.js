@@ -25,7 +25,7 @@ const TRAVIS_REPO_SLUG = `${process.env.TRAVIS_REPO_SLUG}`;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const CHECK_INTERVAL = 20000;
+const CHECK_INTERVAL = 10000;
 
 // ---------------------------------------------------------------------
 

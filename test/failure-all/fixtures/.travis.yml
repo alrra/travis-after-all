@@ -54,19 +54,19 @@ matrix:
   include:
 
     - node_js: "0.12"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=10
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=4
 
     - node_js: "0.12"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=7
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=3
 
     - node_js: "0.12"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=5
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=1
 
     - node_js: "0.12"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=6
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=2
 
     - node_js: "0.10"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=15
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=6
 
     - node_js: "io.js"
       env: JOB_SHOULD_FAIL=true
