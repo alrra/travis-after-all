@@ -25,7 +25,7 @@ const TRAVIS_REPO_SLUG = `${process.env.TRAVIS_REPO_SLUG}`;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const CHECK_INTERVAL = 10000;
+const CHECK_INTERVAL = 20000;
 
 // ---------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ const getBuildID = async (repositoryName, branchName) => {
 
     let buildID = null;
     let url = BUILDS_URL;
-    let attempts = 5;
+    let attempts = 10;
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
