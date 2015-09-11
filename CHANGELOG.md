@@ -6,7 +6,7 @@
 
 * [[`2a656d9390`](https://github.com/alrra/travis-after-all/commit/2a656d9390543ceba776a2c790805bbfdad68e2b)] -
   Make `travis-after-all` take partial decisions
-  (see also: [`#3`](https://github.com/alrra/travis-after-all/issues/3)).
+  (see also: [`#4`](https://github.com/alrra/travis-after-all/issues/4)).
 
 ### 1.3.0 (August 12, 2015)
 
