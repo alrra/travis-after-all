@@ -1,6 +1,7 @@
 ### HEAD
 
-* Update and improve the content from the `README.md` file.
+* [[`471d33763e`](https://github.com/alrra/travis-after-all/commit/471d33763e1311ce6e2997adcf45ff9a75b04653)] -
+  Update and improve the content from the `README.md` file.
 
 ### 1.4.0 (September 10, 2015)
 
