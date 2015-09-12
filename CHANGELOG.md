@@ -1,6 +1,6 @@
 ### HEAD
 
-* Make minor improvements.
+* Update and improve the content from the `README.md` file.
 
 ### 1.4.0 (September 10, 2015)
 
