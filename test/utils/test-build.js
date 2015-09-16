@@ -1,5 +1,5 @@
 import createTestBranch from './create-test-branch';
-import deleteTestBranch from './delete-test-branch';
+import deleteBranch from './delete-branch';
 import getTestBranchName from './get-test-branch-name';
 import travis from './travis';
 
@@ -64,7 +64,7 @@ export default (tap, testDir, testJobs) => {
         t.test('Delete branch', async (tt) => {
 
             try {
-                await deleteTestBranch(TEST_BRANCH_NAME);
+                await deleteBranch(TEST_BRANCH_NAME);
                 tt.pass(`Should delete branch \`${TEST_BRANCH_NAME}\``);
             } catch (e) {
                 tt.fail(`Should delete branch \`${TEST_BRANCH_NAME}\``);
