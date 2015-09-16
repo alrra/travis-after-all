@@ -7,7 +7,7 @@ import wait from './../utils/wait';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const KEYS = pkg['_configs'].keys;
+const KEYS = pkg['config'].keys;
 
 // ---------------------------------------------------------------------
 

@@ -28,7 +28,7 @@ const delayJob = async () => {
 };
 
 const isTestBranch = () =>
-    (travis.getBranchName()).indexOf(pkg['_configs']['test-branch-prefix']) === 0;
+    (travis.getBranchName()).indexOf(pkg['config']['test-branch-prefix']) === 0;
 
 const jobShouldFail = () =>
     `${process.env.JOB_SHOULD_FAIL}` === 'true';
