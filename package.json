@@ -16,7 +16,7 @@
       "failure": "travis-after-all: failed",
       "success": "travis-after-all: succeeded"
     },
-    "test-branch-prefix": "test_build"
+    "test-branch-prefix": "test-build"
   },
   "description": "Simple script that can help you execute code only once in a Travis CI build matrix",
   "devDependencies": {

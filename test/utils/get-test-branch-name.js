@@ -4,9 +4,9 @@ import travis from './travis';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const PREFIX = `${pkg['config']['test-branch-prefix']}_${travis.getCurrentBuildID()}`;
+const PREFIX = `${pkg['config']['test-branch-prefix']}-${travis.getCurrentBuildID()}`;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 export default (baseName) =>
-    `${PREFIX}_${baseName}`;
+    `${PREFIX}-${baseName}`;
