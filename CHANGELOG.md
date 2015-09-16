@@ -1,3 +1,7 @@
+### HEAD
+
+* Lower the check interval limit to `15` seconds.
+
 ### 1.4.1 (September 13, 2015)
 
 * [[`471d33763e`](https://github.com/alrra/travis-after-all/commit/471d33763e1311ce6e2997adcf45ff9a75b04653)] -
