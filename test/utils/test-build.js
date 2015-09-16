@@ -1,12 +1,7 @@
-import path from 'path';
-
 import createTestBranch from './create-test-branch';
 import deleteTestBranch from './delete-test-branch';
 import getTestBranchName from './get-test-branch-name';
 import travis from './travis';
-import repository from './repository';
-
-import wait from './wait';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

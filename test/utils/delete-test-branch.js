@@ -1,5 +1,4 @@
 import exec from './exec';
-import getTestBranchName from './get-test-branch-name';
 import repository from './repository';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

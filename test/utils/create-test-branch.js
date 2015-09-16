@@ -3,7 +3,6 @@ import path from 'path';
 import copyFile from './copy-file';
 import exec from './exec';
 import getTestBranchName from './get-test-branch-name';
-import glob from './glob';
 import repository from './repository';
 import travis from './travis';
 

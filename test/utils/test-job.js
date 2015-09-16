@@ -15,8 +15,6 @@ export default (tap, jobNumber, jobList, configs) => {
 
     tap.test(`Tests for Job ${jobNumber} (id: ${jobList[jobNumber- 1].id})`, async (t) => {
 
-        const AFTER_MSG = `after ${configs.successfulBuild === true ? 'success' : 'failure'}`;
-
         const JOB_DATA = await travis.getFinalJobData(jobList[jobNumber- 1].id);
 
         const FAILURE_TOKEN = generateSHA256(JOB_DATA.id, KEYS.failure);

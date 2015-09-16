@@ -1,7 +1,7 @@
 import path from 'path';
 
-import testJob from './../utils/test-job';
 import testBuild from './../utils/test-build';
+import testJob from './../utils/test-job';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
