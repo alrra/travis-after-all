@@ -1,6 +1,7 @@
 ### HEAD
 
-* Increase initial check interval time to `3` seconds.
+* [[`c2237ac827`](https://github.com/alrra/travis-after-all/commit/c2237ac827e835f90ff0704ad7c84420d0dbc8dc)] -
+  Increase initial check interval time to `3` seconds
 
 ### 1.4.2 (September 17, 2015)
 
