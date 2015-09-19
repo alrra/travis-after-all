@@ -138,7 +138,7 @@ after_script:
 
       # -- [1] -------------------------------------------------------
 
-      curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/1.4.2/lib/travis-after-all.js | node
+      curl -sSL https://raw.githubusercontent.com/alrra/travis-after-all/1.4.3/lib/travis-after-all.js | node
       exitCode=$?
 
 
