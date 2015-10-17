@@ -121,7 +121,7 @@ travisAfterAll(callback);
 
 ### General usage
 
-:warning: If your using this method, please try to keep up with the
+:warning: If you're using this method, please try to keep up with the
 releases and update the version number once a new version is released.
 
 In your `.travis.yml` file add:
