@@ -1,3 +1,8 @@
+### HEAD 
+
+* [[`06c4726334`](https://github.com/alrra/travis-after-all/commit/06c47263343b874f2071f38f19b2854b82748b30)] -
+  Fix typo in `README.md`.
+
 ### 1.4.3 (September 20, 2015)
 
 * [[`c2237ac827`](https://github.com/alrra/travis-after-all/commit/c2237ac827e835f90ff0704ad7c84420d0dbc8dc)] -
