@@ -20,9 +20,9 @@
   },
   "description": "Script that can help you execute code only once in a Travis CI build matrix",
   "devDependencies": {
-    "babel": "^5.8.29",
-    "babel-core": "^5.8.29",
-    "babel-runtime": "^5.8.29",
+    "babel": "^6.0.14",
+    "babel-core": "^6.0.14",
+    "babel-runtime": "^6.0.14",
     "glob": "^5.0.14",
     "tap": "^2.2.0",
     "tap-mocha-reporter": "0.0.21"
