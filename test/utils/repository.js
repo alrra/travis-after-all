@@ -1,4 +1,4 @@
-import travis from './travis';
+import * as travis from './travis';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

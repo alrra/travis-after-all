@@ -1,7 +1,7 @@
 import pkg from './../../package.json';
 
 import generateSHA256 from './../utils/sha256';
-import travis from './../utils/travis';
+import * as travis from './../utils/travis';
 
 import wait from './../utils/wait';
 

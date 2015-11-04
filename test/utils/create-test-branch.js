@@ -4,7 +4,7 @@ import copyFile from './copy-file';
 import exec from './exec';
 import getTestBranchName from './get-test-branch-name';
 import repository from './repository';
-import travis from './travis';
+import * as travis from './travis';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

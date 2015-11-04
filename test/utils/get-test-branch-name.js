@@ -1,6 +1,6 @@
 import pkg from './../../package.json';
 
-import travis from './travis';
+import * as travis from './travis';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
