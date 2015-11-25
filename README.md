@@ -4,7 +4,7 @@
 [![devDependency Status](https://david-dm.org/alrra/travis-after-all/dev-status.svg)](https://david-dm.org/alrra/travis-after-all#info=devDependencies)
 
 `travis-after-all` is a script that can help you execute code only once
-in a [build matrix](http://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix)
+in a [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix)
 based on whether the build has succeeded or failed.
 
 Or to put it in another way, `travis-after-all` is basically a temporary
@@ -14,7 +14,7 @@ workaround for: [`travis-ci/travis-ci#929`](https://github.com/travis-ci/travis-
 ## Usage
 
 __[1]__ Include the command that executes the `travis-after-all` script
-inside [`after_script`](http://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle)
+inside [`after_script`](https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle)
 (or inside of a script that is included inside `after_script`).
 
 __[2]__ Based on the (exit) code returned by `travis-after-all`, run
@@ -27,7 +27,7 @@ See [examples](#usage-examples).
 Terminology:
 
 * A __job passed__ if either the tests passed, or the tests failed,
-  but the job was [allowed to fail](http://docs.travis-ci.com/user/customizing-the-build/#Rows-that-are-Allowed-To-Fail).
+  but the job was [allowed to fail](https://docs.travis-ci.com/user/customizing-the-build/#Rows-that-are-Allowed-To-Fail).
 
 * A __build succeeded__ if all jobs passed and there is at least one
   job who's tests passed.
@@ -157,8 +157,8 @@ after_script:
 ```
 
 __Note:__ `travis-after-all` is written in JavaScript, however, since
-Travis [includes the Node runtime by default](http://docs.travis-ci.com/user/ci-environment/#Runtimes),
-it can be use no matter what [build environment](http://docs.travis-ci.com/user/ci-environment/)
+Travis [includes the Node runtime by default](https://docs.travis-ci.com/user/ci-environment/#Runtimes),
+it can be use no matter what [build environment](https://docs.travis-ci.com/user/ci-environment/)
 you have.
 
 
