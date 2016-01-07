@@ -119,14 +119,19 @@ function callback(code, error) {
 travisAfterAll(callback);
 ```
 
-You can override the [API host](https://docs.travis-ci.com/api/) by passing
-a second argument:
+Travis Pro and Travis Enterprise require different API hosts and may
+require an access token. You can set these via a second argument:
+
 
 ```js
 travisAfterAll(callback, {
-    API_HOST: 'https://travis.example.com'
+    API_HOST: 'https://travis.example.com',
+    ACCESS_TOKEN: 'my travis access token'
 });
 ```
+
+See https://docs.travis-ci.com/api/ for more information on API hosts
+and how to exchange a GitHub token for a Travis API Token.
 
 ### General usage
 
