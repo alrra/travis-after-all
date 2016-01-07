@@ -119,6 +119,15 @@ function callback(code, error) {
 travisAfterAll(callback);
 ```
 
+You can override the [API host](https://docs.travis-ci.com/api/) by passing
+a second argument:
+
+```js
+travisAfterAll(callback, {
+    API_HOST: 'https://travis.example.com'
+});
+```
+
 ### General usage
 
 :warning: If you're using this method, please try to keep up with the
