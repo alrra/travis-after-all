@@ -30,7 +30,7 @@
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
     "tap": "^5.0.0",
-    "tap-mocha-reporter": "0.0.22"
+    "tap-mocha-reporter": "0.0.24"
   },
   "homepage": "https://github.com/alrra/travis-after-all#readme",
   "keywords": [
