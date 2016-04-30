@@ -33,6 +33,10 @@
     "tap": "^5.0.0",
     "tap-mocha-reporter": "0.0.24"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "homepage": "https://github.com/alrra/travis-after-all#readme",
   "keywords": [
     "travis",

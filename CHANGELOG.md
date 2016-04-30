@@ -1,3 +1,7 @@
+### HEAD
+
+* Update the list of files to be included by `npm`.
+
 ### 1.4.4 (October 19, 2015)
 
 * [[`06c4726334`](https://github.com/alrra/travis-after-all/commit/06c47263343b874f2071f38f19b2854b82748b30)] -

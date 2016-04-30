@@ -1,9 +1,0 @@
-.editorconfig
-.gitattributes
-.gitignore
-.npmignore
-.travis
-.travis.yml
-dist_test
-scripts
-test
