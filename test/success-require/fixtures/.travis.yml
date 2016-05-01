@@ -20,13 +20,13 @@ matrix:
 
   include:
 
-    - node_js: "5"
+    - node_js: "6"
       env: JOB_SHOULD_FAIL=true TIME_DELAY=4
 
-    - node_js: "5"
+    - node_js: "6"
       env: JOB_SHOULD_FAIL=true TIME_DELAY=1
 
-    - node_js: "5"
+    - node_js: "6"
       env: JOB_SHOULD_FAIL=true TIME_DELAY=3
 
     - node_js: "5"
