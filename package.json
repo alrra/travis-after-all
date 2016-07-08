@@ -30,8 +30,8 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.3.13",
     "babel-runtime": "^6.3.19",
-    "tap": "^5.0.0",
-    "tap-mocha-reporter": "0.0.24"
+    "tap": "^6.1.1",
+    "tap-mocha-reporter": "0.0.25"
   },
   "files": [
     "bin",
