@@ -53,7 +53,10 @@ Meaning of (exit) codes:
 
 ## Usage examples
 
-### Using `npm`
+This section gives two examples of how your Travis job can obtain and
+use `travis-after-all`.
+
+### Obtaining via `npm`
 
 Install `travis-after-all` as a `devDependency`.
 
@@ -119,7 +122,7 @@ function callback(code, error) {
 travisAfterAll(callback);
 ```
 
-### General usage
+### Obtaining via `curl`
 
 :warning: If you're using this method, please try to keep up with the
 releases and update the version number once a new version is released.
