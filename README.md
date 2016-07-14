@@ -30,7 +30,7 @@ Terminology:
   but the job was [allowed to fail](https://docs.travis-ci.com/user/customizing-the-build/#Rows-that-are-Allowed-To-Fail).
 
 * A __build succeeded__ if all jobs passed and there is at least one
-  job who's tests passed.
+  job whose tests passed.
 
 * A __build failed__ if there is at least one job that didn't pass,
   or if all jobs passed, but for all of them the tests failed.
@@ -158,7 +158,7 @@ after_script:
 
 __Note:__ `travis-after-all` is written in JavaScript, however, since
 Travis [includes the Node runtime by default](https://docs.travis-ci.com/user/ci-environment/#Runtimes),
-it can be use no matter what [build environment](https://docs.travis-ci.com/user/ci-environment/)
+it can be used no matter what [build environment](https://docs.travis-ci.com/user/ci-environment/)
 you have.
 
 
