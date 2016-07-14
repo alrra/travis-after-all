@@ -119,6 +119,20 @@ function callback(code, error) {
 travisAfterAll(callback);
 ```
 
+Travis Pro and Travis Enterprise require different API hosts and may
+require an access token. You can set these via a second argument:
+
+
+```js
+travisAfterAll(callback, {
+    API_HOST: 'https://travis.example.com',
+    ACCESS_TOKEN: 'my travis access token'
+});
+```
+
+See https://docs.travis-ci.com/api/ for more information on API hosts
+and how to exchange a GitHub token for a Travis API Token.
+
 ### General usage
 
 :warning: If you're using this method, please try to keep up with the
