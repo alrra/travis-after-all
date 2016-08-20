@@ -1,7 +1,7 @@
 # travis-after-all
 
 [![Build Status](https://travis-ci.org/alrra/travis-after-all.svg?branch=master)](https://travis-ci.org/alrra/travis-after-all)
-[![devDependency Status](https://david-dm.org/alrra/travis-after-all/dev-status.svg)](https://david-dm.org/alrra/travis-after-all#info=devDependencies)
+[![devDependency Status](https://david-dm.org/alrra/travis-after-all/dev-status.svg)](https://david-dm.org/alrra/travis-after-all?type=dev)
 
 `travis-after-all` is a script that can help you execute code only once
 in a [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix)
