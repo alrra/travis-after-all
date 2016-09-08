@@ -23,15 +23,15 @@
   "description": "Script that can help you execute code only once in a Travis CI build matrix",
   "devDependencies": {
     "@alrra/travis-scripts": "^3.0.0",
-    "babel-cli": "^6.3.17",
+    "babel-cli": "^6.14.0",
     "babel-plugin-transform-async-to-generator": "^6.3.13",
-    "babel-plugin-transform-runtime": "^6.3.13",
-    "babel-polyfill": "^6.3.14",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-register": "^6.3.13",
-    "babel-runtime": "^6.3.19",
-    "tap": "^6.1.1",
-    "tap-mocha-reporter": "0.0.25"
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "babel-runtime": "^6.11.6",
+    "tap": "^7.1.0",
+    "tap-mocha-reporter": "^2.0.1"
   },
   "files": [
     "bin",
