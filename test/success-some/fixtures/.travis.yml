@@ -62,11 +62,8 @@ matrix:
     - node_js: "6"
       env: JOB_SHOULD_FAIL=true TIME_DELAY=6
 
-    - node_js: "5"
-      env: TIME_DELAY=2
-
     - node_js: "0.12"
-      env: JOB_SHOULD_FAIL=true TIME_DELAY=3
+      env: JOB_SHOULD_FAIL=true TIME_DELAY=2
 
     - node_js: "4"
       env: TIME_DELAY=1
@@ -78,7 +75,7 @@ matrix:
 
     - env: JOB_SHOULD_FAIL=true TIME_DELAY=6
 
-    - env: JOB_SHOULD_FAIL=true TIME_DELAY=3
+    - env: JOB_SHOULD_FAIL=true TIME_DELAY=2
 
 
 notifications:

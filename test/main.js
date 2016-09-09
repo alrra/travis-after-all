@@ -65,18 +65,18 @@ const main = async () => {
 
             // Failed builds
 
-            testFailureAll(t)           // ( 1  1  1  1  1  1  )
-            testFailureSome(t)          // ( 0  0* 0  1  0  0  )
-            testFailureCURL(t)          // ( 0* 1  0  1  0  0  )
-            testFailureRequire(t);      // ( 0* 0* 1  0  0  1  )
-            testFailureEdge(t);         // ( 0* 0* 0* 0* 0* 0* )
+            testFailureAll(t);
+            testFailureSome(t);
+            testFailureCURL(t);
+            testFailureRequire(t);
+            testFailureEdge(t);
 
             // Successful builds
 
-            testSuccessAll(t);          // ( 0  0  0  0  0  0  )
-            testSuccessSome(t);         // ( 0* 0  0* 0  0* 0  )
-            testSuccessCURL(t);         // ( 0* 0* 0* 0  0  0  )
-            testSuccessRequire(t);      // ( 0* 0* 0* 0* 0* 0  )
+            testSuccessAll(t);
+            testSuccessSome(t);
+            testSuccessCURL(t);
+            testSuccessRequire(t);
 
             t.end();
 

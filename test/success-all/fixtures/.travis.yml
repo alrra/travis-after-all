@@ -62,11 +62,8 @@ matrix:
     - node_js: "6"
       env: TIME_DELAY=3
 
-    - node_js: "5"
-      env: TIME_DELAY=2
-
     - node_js: "0.12"
-      env: TIME_DELAY=6
+      env: TIME_DELAY=2
 
     - node_js: "4"
 
